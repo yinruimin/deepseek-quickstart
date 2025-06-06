@@ -12,6 +12,7 @@ class TestIsValidEmail(unittest.TestCase):
             "user-name@domain-name.com",        # 带连字符的域名
         ]
         
+        
         for email in valid_emails:
             with self.subTest(email=email):
                 self.assertTrue(is_valid_email(email), f"应该有效: {email}")
